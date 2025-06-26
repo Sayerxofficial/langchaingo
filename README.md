@@ -1,14 +1,6 @@
-# langchaingo
-LangChain for Go, the easiest way to write LLM-based programs in Go
 > ⚠️ **This is a fork** of the original [github.com/tmc/langchaingo](https://github.com/tmc/langchaingo) repository.
 
-# 🦜️🔗 LangChain Go (fork)
-
-[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/sayerxofficial/langchaingo)
-[![scorecard](https://goreportcard.com/badge/github.com/sayerxofficial/langchaingo)](https://goreportcard.com/report/github.com/sayerxofficial/langchaingo)
-[![](https://dcbadge.vercel.app/api/server/8bHGKzHBkM?compact=true&style=flat)](https://discord.gg/8bHGKzHBkM)
-[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/sayerxofficial/langchaingo)
-[<img src="https://github.com/codespaces/badge.svg" title="Open in Github Codespace" width="150" height="20">](https://codespaces.new/sayerxofficial/langchaingo)
+# 🔗 LangChain Go (fork)
 
 ⚡ Building applications with LLMs through composability, with Go! ⚡
 
@@ -20,13 +12,7 @@ LangChain for Go, the easiest way to write LLM-based programs in Go
 > go get github.com/sayerxofficial/langchaingo@latest
 > ```
 
-## Why this fork?
 
-This fork was created to incorporate functionality from open Pull Requests that haven't been merged into the original repository yet. You can view the list of accepted PRs in our [v0.1.13-update.0 release](https://github.com/sayerxofficial/langchaingo/releases/tag/v0.1.13-update.0) and in the [main-pull-requests branch](https://github.com/sayerxofficial/langchaingo/commits/main-pull-requests/).
-
-Additionally, this repository contains custom improvements and enhancements related to langchaingo support, which will be published as releases. The original repository's state can be accessed in the [main branch](https://github.com/sayerxofficial/langchaingo/tree/main), which will be regularly updated with upstream changes.
-
-This fork is primarily maintained for use in the [PentAGI](https://github.com/sayerxofficial/pentagi) project, an autonomous AI Agents system for performing complex penetration testing tasks.
 
 ## Branch Structure and Versioning
 
@@ -73,23 +59,7 @@ If you want to contribute to this fork, please create Pull Requests based on the
 
 When creating a PR, please ensure your changes are well-tested and include appropriate documentation. Once merged, your contributions will be included in the next stable release with fixed commit hashes.
 
-## Acknowledgements
 
-Special thanks to [Travis Cline](https://github.com/tmc) (@tmc) and all [contributors](https://github.com/sayerxofficial/langchaingo/graphs/contributors) who have made this project possible.
-
-## Original resources
-
-- Documentation: [pkg.go.dev/github.com/tmc/langchaingo](https://pkg.go.dev/github.com/tmc/langchaingo)
-- Discord: [Join the official LangChain Go community](https://discord.gg/8bHGKzHBkM)
-
-## 🤔 What is this?
-
-This is the Go language implementation of [LangChain](https://github.com/langchain-ai/langchain).
-
-## 📖 Documentation
-
-- [Documentation Site](https://sayerxofficial.github.io/langchaingo/docs/)
-- [API Reference](https://pkg.go.dev/github.com/sayerxofficial/langchaingo)
 
 
 ## 🎉 Examples
@@ -130,7 +100,6 @@ Socktastic
 
 # Resources
 
-Join the Discord server for support and discussions: [Join Discord](https://discord.gg/8bHGKzHBkM)
 
 Here are some links to blog posts and articles on using Langchain Go:
 
@@ -140,11 +109,4 @@ Here are some links to blog posts and articles on using Langchain Go:
 - [Creating a ChatGPT Clone that Runs on Your Laptop with Go](https://sausheong.com/creating-a-chatgpt-clone-that-runs-on-your-laptop-with-go-bf9d41f1cf88?sk=05dc67b60fdac6effb1aca84dd2d654e) - Aug 2023
 
 
-# Contributors
-
-There is a momentum for moving the development of langchaingo to a more community effort, if you are interested in being a maintainer or you are a contributor please join our [Discord](https://discord.gg/8bHGKzHBkM) and let us know.
-
-<a href="https://github.com/sayerxofficial/langchaingo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=sayerxofficial/langchaingo" />
-</a>
 
