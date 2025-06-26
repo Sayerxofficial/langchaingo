@@ -1,0 +1,36 @@
+package main
+
+import (
+	"context"
+	"fmt"
+	"log"
+
+	"github.com/sayerxofficial/langchaingo/llms"
+	"github.com/sayerxofficial/langchaingo/llms/ollama"
+	"github.com/sayerxofficial/langchaingo/llms/streaming"
+)
+
+func main() {
+	llm, err := ollama.New(ollama.WithModel("mistral"))
+	if err != nil {
+		log.Fatal(err)
+	}
+	ctx := context.Background()
+
+	content := []llms.MessageContent{
+		llms.TextParts(llms.ChatMessageTypeSystem, "You are a company branding design wizard."),
+		llms.TextParts(llms.ChatMessageTypeHuman, "What would be a good company name a company that makes colorful socks?"),
+	}
+	completion, err := llm.GenerateContent(
+		ctx,
+		content,
+		llms.WithStreamingFunc(func(_ context.Context, chunk streaming.Chunk) error {
+			fmt.Println(chunk.String())
+			return nil
+		}),
+	)
+	if err != nil {
+		log.Fatal(err)
+	}
+	_ = completion
+}

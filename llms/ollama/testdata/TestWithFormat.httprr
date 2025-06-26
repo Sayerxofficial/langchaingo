@@ -1,0 +1,15 @@
+httprr trace v1
+371 493
+POST http://localhost:11434/api/chat HTTP/1.1
+Host: localhost:11434
+User-Agent: langchaingo-httprr
+Content-Length: 184
+Accept: application/x-ndjson
+Content-Type: application/json
+
+{"model":"qwen3:8b","messages":[{"role":"user","content":"How many feet are in a nautical mile? Respond with JSON containing the answer."}],"stream":false,"format":"json","options":{}}HTTP/1.1 200 OK
+Content-Length: 369
+Content-Type: application/json; charset=utf-8
+Date: Mon, 23 Jun 2025 11:09:16 GMT
+
+{"model":"qwen3:8b","created_at":"2025-06-23T11:09:16.952042Z","message":{"role":"assistant","content":"{\n\n\n  \"answer\": \"A nautical mile is defined as exactly 6076.12 feet.\"\n}"},"done_reason":"stop","done":true,"total_duration":815023417,"load_duration":28388125,"prompt_eval_count":25,"prompt_eval_duration":126260333,"eval_count":26,"eval_duration":659939125}
